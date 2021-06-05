@@ -33,7 +33,7 @@ const App = () => {
     setLoading(true);
 
     //Fetch API data for current search
-    axios.get(` https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${search}&limit=50`)
+    axios.get(` https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${search}&limit=48`)
       .then(res => {
         setGifs(res.data.data);
         setLoading(false);
