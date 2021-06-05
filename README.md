@@ -1,3 +1,21 @@
+# Gif Search App
+This is a gif search app that I created using React.  There is a search bar that allows users to search for gifts.  The images are pulled from the Giphy API using the Axios module.
+
+## How to use these files
+
+1. Download the project files.
+2. Run `npm install` to install the necessary dependencies.
+3. Sign up for a free account with Giphy and create an APP to get the [API key](https://developers.giphy.com/).
+4. Create a file named `config.js` and place it in the `src` folder.  Write this into the file.
+```
+const apiKey = 'YOUR_PUBLIC_KEY';
+export default apiKey;  
+```
+5. Run the command `npm start` to start the app and it will be open up in your browser with [`localhost:3000`](http://localhost:3000/).
+
+**Click below for a live preview**\
+http://www.jonhayjr.com/gif-search-app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
