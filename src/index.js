@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter basename='/search/dogs'>
+    <HashRouter>
       <App />
     </HashRouter>
   </React.StrictMode>,

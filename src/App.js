@@ -13,6 +13,7 @@ import apiKey from './Config';
 
 //Import Components
 import Header from './components/Header';
+import Navbar from './components/Navbar';
 import SearchForm from './components/SearchForm';
 import Gifs from './components/Gifs';
 import FourOhFour from './components/FourOhFour';
@@ -32,7 +33,7 @@ const App = () => {
     setLoading(true);
 
     //Fetch API data for current search
-    axios.get(` https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${search}&limit=24`)
+    axios.get(` https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${search}&limit=50`)
       .then(res => {
         setGifs(res.data.data);
         setLoading(false);
@@ -42,8 +43,11 @@ const App = () => {
   //Load initial API data on page load and handle page refresh
   useEffect(() => {
 
+    console.log(history.location.pathname);
     //Get search topic from path
     const path = history.location.pathname.replace('/search/', '');
+
+    console.log(path)
 
     //Update search state based on current path
     setSearch(path);
@@ -92,6 +96,7 @@ const App = () => {
         <Container className='text-center'>
           <Header title='Gif Search'/>
           <SearchForm handleSearchSubmit={handleSearchSubmit} onSearchChange={onSearchChange}/>
+          <Navbar/>
             <Switch>
               <Route exact path='/' render={() => <Redirect to='/search/dogs' />}/>
               <Route path='/search/:gif' render={() => <Gifs gifs={gifs} isLoading={isLoading}/>}/>
