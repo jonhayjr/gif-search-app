@@ -16,9 +16,9 @@ const Gifs = ({gifs, isLoading}) => {
                     (
                     <Row noGutters={true}>
                         {gifs.map(gif =>
-                        <Col
-                        xs={{ span: 6 }} sm={{ span: 6 }} md={{ span: 3 }}
-                        lg={{ span: 2 }} xl={{ span: 1 }}
+                        <Col fluid
+                        xs={{ span: 12 }} sm={{ span: 6 }} md={{ span: 4 }}
+                        lg={{ span: 3 }} xl={{ span: 3}}
                         ><Gif key={gif.id} src={gif.images.fixed_height.url}/>
                         </Col>)}
                     </Row>)
