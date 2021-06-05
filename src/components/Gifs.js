@@ -19,7 +19,7 @@ const Gifs = ({gifs, isLoading, handleImageClick}) => {
                         <Col key={gif.id}
                         xs={{ span: 12 }} sm={{ span: 6 }} md={{ span: 4 }}
                         lg={{ span: 3 }} xl={{ span: 3}}
-                        ><Gif src={gif.images.fixed_height.url} handleImageClick={handleImageClick}/>
+                        ><Gif src={gif.images.fixed_height.url} url={gif.url} handleImageClick={handleImageClick}/>
                         </Col>)}
                     </Row>)
                : (<NoGifs />)

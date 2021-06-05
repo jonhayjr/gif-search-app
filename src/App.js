@@ -100,8 +100,8 @@ const App = () => {
   }
 
   //On gif click this function copies the gif url
-  const handleImageClick = (src) => {
-    copy(src);
+  const handleImageClick = (url) => {
+    copy(url);
   }
 
   return (
