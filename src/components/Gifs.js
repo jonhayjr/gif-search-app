@@ -11,7 +11,7 @@ const Gifs = ({gifs, isLoading}) => {
     return (
         <Container fluid={true}>
            {   isLoading ?
-                (<p className='lead'>loading...</p>)
+                (<p className='h4'>Loading...</p>)
                 : gifs.length > 0 ? 
                     (
                     <Row noGutters={true}>
