@@ -6,17 +6,7 @@ a {
   text-decoration: none;
 }
 
-.gifs {
-  max-width: 875px; /*200px * 4 = 800px which leaves 75px for grid spacing*/
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 10px;
-  margin: 0 auto;
-  text-align: center;
-}
-
 img { 
-  width: 100%;
   height: 200px;
 }
 

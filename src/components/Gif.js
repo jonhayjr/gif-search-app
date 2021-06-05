@@ -1,6 +1,6 @@
 const Gif = ({src}) => {
     return (
-        <img className='img-responsive' src={src}/>
+        <img src={src} alt='' width='100%'/>
     )
 }
 

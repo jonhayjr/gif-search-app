@@ -3,8 +3,7 @@ import{
   Route,
   Switch,
   Redirect,
-  useHistory,
-  useParams
+  useHistory
 } from 'react-router-dom';
 import {Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
