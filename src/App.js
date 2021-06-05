@@ -1,3 +1,4 @@
+//React
 import {useEffect, useState,} from 'react';
 import{
   Route,
@@ -5,10 +6,19 @@ import{
   Redirect,
   useHistory
 } from 'react-router-dom';
+
+//Bootstrao
 import {Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+//Axios
 import axios from 'axios';
+
+//Import API Key from Config.js
 import apiKey from './Config';
+
+//Copy-to-Clipboard
+import copy from 'copy-to-clipboard';
 
 
 //Import Components
@@ -17,6 +27,7 @@ import Navbar from './components/Navbar';
 import SearchForm from './components/SearchForm';
 import Gifs from './components/Gifs';
 import FourOhFour from './components/FourOhFour';
+import AlertBanner from './components/AlertBanner';
 
 const App = () => {
 
@@ -88,15 +99,21 @@ const App = () => {
     setSearch(event.target.value);
   }
 
+  //On gif click this function copies the gif url
+  const handleImageClick = (src) => {
+    copy(src);
+  }
+
   return (
      
         <Container className='text-center'>
           <Header title='Gif Search'/>
+          <AlertBanner/>
           <SearchForm handleSearchSubmit={handleSearchSubmit} onSearchChange={onSearchChange}/>
           <Navbar/>
             <Switch>
               <Route exact path='/' render={() => <Redirect to='/search/dogs' />}/>
-              <Route path='/search/:gif' render={() => <Gifs gifs={gifs} isLoading={isLoading}/>}/>
+              <Route path='/search/:gif' render={() => <Gifs gifs={gifs} isLoading={isLoading} handleImageClick={handleImageClick} />}/>
               <Route component={FourOhFour}/>
             </Switch>
         </Container>

@@ -5,7 +5,7 @@ import {withRouter} from 'react-router-dom';
 import Gif from './Gif';
 import NoGifs from './NoGifs'
 
-const Gifs = ({gifs, isLoading}) => {
+const Gifs = ({gifs, isLoading, handleImageClick}) => {
 
 
     return (
@@ -19,7 +19,7 @@ const Gifs = ({gifs, isLoading}) => {
                         <Col key={gif.id}
                         xs={{ span: 12 }} sm={{ span: 6 }} md={{ span: 4 }}
                         lg={{ span: 3 }} xl={{ span: 3}}
-                        ><Gif src={gif.images.fixed_height.url}/>
+                        ><Gif src={gif.images.fixed_height.url} handleImageClick={handleImageClick}/>
                         </Col>)}
                     </Row>)
                : (<NoGifs />)

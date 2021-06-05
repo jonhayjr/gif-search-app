@@ -2,7 +2,7 @@ import {withRouter} from 'react-router-dom';
 
 const SearchForm = ({handleSearchSubmit, onSearchChange}) => {
     return (
-        <form className='mb-5' onSubmit={handleSearchSubmit}>   
+        <form className='mb-5 mt-5' onSubmit={handleSearchSubmit}>   
             <input type='search' className='w-50 mx-auto' onChange={onSearchChange} placeholder='Search'/>
 
             <button type='submit' className='btn btn-primary'>
