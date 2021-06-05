@@ -43,11 +43,8 @@ const App = () => {
   //Load initial API data on page load and handle page refresh
   useEffect(() => {
 
-    console.log(history.location.pathname);
     //Get search topic from path
     const path = history.location.pathname.replace('/search/', '');
-
-    console.log(path)
 
     //Update search state based on current path
     setSearch(path);
@@ -55,7 +52,7 @@ const App = () => {
     //Get API Data for current path
     getGifAPIData(path);
 
-  }, [])
+  }, [history.location.pathname])
 
   //Listens for change in history
   useEffect(() => {
@@ -68,7 +65,7 @@ const App = () => {
       //Get API Data for current path
       getGifAPIData(path);      
     }) 
- },[history]) 
+ },[history.location.pathname, history]) 
 
  //Function to handle submit on SearchForm
   const handleSearchSubmit = (event) => {
