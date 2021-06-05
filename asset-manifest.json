@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/gif-search-app/static/css/main.76e4f534.chunk.css",
-    "main.js": "/gif-search-app/static/js/main.e8ed7521.chunk.js",
-    "main.js.map": "/gif-search-app/static/js/main.e8ed7521.chunk.js.map",
-    "runtime-main.js": "/gif-search-app/static/js/runtime-main.5f81a6cd.js",
-    "runtime-main.js.map": "/gif-search-app/static/js/runtime-main.5f81a6cd.js.map",
+    "main.css": "/gif-search-app/static/css/main.3e3676c4.chunk.css",
+    "main.js": "/gif-search-app/static/js/main.185c5866.chunk.js",
+    "main.js.map": "/gif-search-app/static/js/main.185c5866.chunk.js.map",
+    "runtime-main.js": "/gif-search-app/static/js/runtime-main.a9e415b5.js",
+    "runtime-main.js.map": "/gif-search-app/static/js/runtime-main.a9e415b5.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/gif-search-app/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.f1ae83e4.chunk.js": "/gif-search-app/static/js/2.f1ae83e4.chunk.js",
-    "static/js/2.f1ae83e4.chunk.js.map": "/gif-search-app/static/js/2.f1ae83e4.chunk.js.map",
-    "static/js/3.b577e7ee.chunk.js": "/gif-search-app/static/js/3.b577e7ee.chunk.js",
-    "static/js/3.b577e7ee.chunk.js.map": "/gif-search-app/static/js/3.b577e7ee.chunk.js.map",
+    "static/js/2.78a14d90.chunk.js": "/gif-search-app/static/js/2.78a14d90.chunk.js",
+    "static/js/2.78a14d90.chunk.js.map": "/gif-search-app/static/js/2.78a14d90.chunk.js.map",
+    "static/js/3.cb7bf2c4.chunk.js": "/gif-search-app/static/js/3.cb7bf2c4.chunk.js",
+    "static/js/3.cb7bf2c4.chunk.js.map": "/gif-search-app/static/js/3.cb7bf2c4.chunk.js.map",
     "index.html": "/gif-search-app/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/gif-search-app/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.76e4f534.chunk.css.map": "/gif-search-app/static/css/main.76e4f534.chunk.css.map",
-    "static/js/2.f1ae83e4.chunk.js.LICENSE.txt": "/gif-search-app/static/js/2.f1ae83e4.chunk.js.LICENSE.txt"
+    "static/css/main.3e3676c4.chunk.css.map": "/gif-search-app/static/css/main.3e3676c4.chunk.css.map",
+    "static/js/2.78a14d90.chunk.js.LICENSE.txt": "/gif-search-app/static/js/2.78a14d90.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.5f81a6cd.js",
+    "static/js/runtime-main.a9e415b5.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.f1ae83e4.chunk.js",
-    "static/css/main.76e4f534.chunk.css",
-    "static/js/main.e8ed7521.chunk.js"
+    "static/js/2.78a14d90.chunk.js",
+    "static/css/main.3e3676c4.chunk.css",
+    "static/js/main.185c5866.chunk.js"
   ]
 }
